@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prueba de Plataforma</title>
+<style>
+  /* Fondo con tu imagen */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('2fcc59574ceed32ff4e495bbd88e2757.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    overflow-x: hidden;
+  }
+
+  /* Contenedor principal */
+  .container {
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  /* Título y texto */
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px black;
+  }
+  p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.5;
+    text-shadow: 1px 1px 6px black;
+  }
+
+  /* Botones */
+  .btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.3);
+  }
+
+  /* Animaciones */
+  @keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(-50px);}
+    100% {opacity: 1; transform: translateY(0);}
+  }
+
+  /* Sección deslizable (carrusel simple) */
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+  }
+  .carousel div {
+    min-width: 250px;
+    margin: 0 15px;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    flex-shrink: 0;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  .carousel div:hover {
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Bienvenido a Nuestra Plataforma de Venta</h1>
+  <p>Explora nuestra tienda con cientos de productos valorados positivamente por miles de usuarios. Calidad garantizada y atención rápida.</p>
+  
+  <!-- Botones -->
+  <a class="btn" href="#">Ver Catálogo</a>
+  <a class="btn" href="#">Cómo Comprar</a>
+  <a class="btn" href="#">Formas de Pago</a>
+
+  <!-- Carrusel simple -->
+  <div class="carousel">
+    <div>Producto 1 - ⭐⭐⭐⭐⭐</div>
+    <div>Producto 2 - ⭐⭐⭐⭐⭐</div>
+    <div>Producto 3 - ⭐⭐⭐⭐⭐</div>
+    <div>Producto 4 - ⭐⭐⭐⭐⭐</div>
+    <div>Producto 5 - ⭐⭐⭐⭐⭐</div>
+  </div>
+</div>
+
+</body>
+  </html>
